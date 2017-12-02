@@ -1,0 +1,106 @@
+body {
+    background-color: white; 
+}
+
+header {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer img, figure {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 35px auto 10px auto;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.flip-container{
+    width: 24%;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    min-height: 150px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	width: 100%;
+    min-height: 150px;
+
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+    z-index: 2;
+    background: url(../img/card.png) center center no-repeat;
+    transform: rotateY(0deg);
+    background-size: contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.cats_0{
+        background: url(../img/cats_0.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.cats_1{
+        background: url(../img/cats_1.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.cats_2{
+        background: url(../img/cats_2.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.cats_3{
+        background: url(../img/cats_3.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.cats_4{
+        background: url(../img/cats_4.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.cats_5{
+        background: url(../img/cats_5.png) center center no-repeat;
+        background-size: contain;
+    }
+    
+.flipper.hide {
+        display: none;
+    }
+
+.flipper.open {
+        transform: rotateY(180deg);
+    }

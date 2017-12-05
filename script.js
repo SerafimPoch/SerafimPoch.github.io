@@ -47,7 +47,7 @@ const hide = () =>{
 const newGener = () =>{
     alert("You win!")
         main.innerHTML = ''
-            new_board()
+        newBoard()
 }
 
 const flipBack = () =>{
